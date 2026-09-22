@@ -46,14 +46,19 @@ def build_eurofins_clone_pdf(muestras_list, output_pdf_path):
     logo_enac_path = resolver_ruta_asset("enac_ilac_oficial.png", base_dir)
     firma_completa_path = resolver_ruta_asset("firma_completa_nuria.png", base_dir)
 
+    # Extraemos el nombre del archivo para asignarlo al metadato del PDF
+    pdf_filename = os.path.basename(output_pdf_path)
     # Configuración del documento con margen inferior reservado para el pie fijo
+
     doc = SimpleDocTemplate(
         output_pdf_path,
         pagesize=A4,
         leftMargin=26.75,
         rightMargin=26.75,
         topMargin=20,
-        bottomMargin=84,  # Reserva espacio para el pie en y = 14..78 pt
+        bottomMargin=84,
+        title=pdf_filename,  # <-- Pone el nombre del archivo como Título
+        author="Eurofins Análisis Alimentario, S.L.U.",
     )
 
     styles = getSampleStyleSheet()
