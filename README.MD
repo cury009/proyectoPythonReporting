@@ -1,4 +1,4 @@
-# Eurofins Report Generator
+# Python Report Generator
 
 Aplicación de escritorio desarrollada en Python con PyQt5 y ReportLab para la gestión analítica y generación de informes oficiales de laboratorio clonados de Eurofins Alimentario (documentos de 3 páginas con réplicas microbiológicas $n=5$).
 
