@@ -1,0 +1,24 @@
+# Archivos de entorno virtual
+.venv/
+venv/
+ENV/
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Carpetas generadas por PyInstaller
+build/
+dist/
+*.spec
+
+# Informes generados en pruebas
+informes_generados/
+*.pdf
+
+# Archivos temporales de sistema y editores
+.vscode/
+.idea/
+*.swp
+Thumbs.db
